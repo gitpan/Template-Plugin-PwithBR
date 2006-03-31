@@ -1,0 +1,6 @@
+Revision history for Perl extension Template::Plugin::PwithBR.
+
+0.01  Fri Mar 24 02:22:00 2006
+	- original version; created by h2xs 1.23 with options
+		-X -n Template::Plugin::PwithBR
+
