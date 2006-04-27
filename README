@@ -7,8 +7,8 @@ NAME
 
 SYNOPSIS
 
-  [% USE PinBR %]
-  [% FILTER p_in_br %]
+  [% USE PwithBR %]
+  [% FILTER p_with_br %]
   foo
   bar
   
@@ -28,7 +28,7 @@ Output:
 DESCRIPTION
 
   Template::Plugin::PinBR is TT plugin.When this plugin is used,
-  E<lt>pE<gt> and E<lt>brE<gt> are appropriately output.
+  <p> and <br> are appropriately output.
 
   It is not possible to achieve it with the filter html_para and
   html_break / html_para_break or html_line_break.
@@ -39,7 +39,7 @@ SEE ALSO
 
 AUTHOR
 
-  Daisuke Komatsu, <taro@taro-web.com>
+  Daisuke Komatsu, <taro@cpan.org>
 
 COPYRIGHT AND LICENSE
 

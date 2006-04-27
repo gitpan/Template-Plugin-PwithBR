@@ -8,7 +8,7 @@ use Template::Plugin;
 
 our $FILTER_NAME = 'p_with_br';
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new {
     my($class, $context, @args) = @_;
@@ -34,8 +34,8 @@ Template::Plugin::PwithBR - TT Plugin that changes paragraph and newline into p 
 
 =head1 SYNOPSIS
 
-  [% USE PinBR %]
-  [% FILTER p_in_br %]
+  [% USE PwithBR %]
+  [% FILTER p_with_br %]
   foo
   bar
   
@@ -66,7 +66,7 @@ L<Template>, L<Template::Plugin>
 
 =head1 AUTHOR
 
-Daisuke Komatsu, E<lt>taro@taro-web.comE<gt>
+Daisuke Komatsu, E<lt>taro@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
