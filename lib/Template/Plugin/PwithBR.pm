@@ -8,7 +8,7 @@ use Template::Plugin;
 
 our $FILTER_NAME = 'p_with_br';
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub new {
     my($class, $context, @args) = @_;
@@ -19,7 +19,10 @@ sub new {
 
 sub p_with_br {
     my $text = shift;
-    $text =~ s#(?<!(?:\n|\r))(\n|\r)(?!(?:\n|\r))#<br />\n#g;
+    $text =~ s/\x0D\x0A/\n/g;
+    $text =~ tr/\x0D\x0A/\n\n/; 
+
+    $text =~ s{(?<!\n)(\n)(?!\n)}{<br />\n}g;
     $text = "<p>\n"
         . join("\n</p>\n\n<p>\n", split(/(?:\r?\n){2,}/, $text))
         . "</p>\n";

@@ -1,5 +1,9 @@
 Revision history for Perl extension Template::Plugin::PwithBR.
 
+0.04  2007-05-12T22:34:43+09:00
+        - unified newline code.
+        - remove to check perl version
+
 0.03  Thu Apr 27 19:12:22
 	- pod amendments
 
